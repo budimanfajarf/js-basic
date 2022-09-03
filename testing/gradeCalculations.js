@@ -19,4 +19,8 @@ const isStudentPassExam = (valuesExam, name) => {
     }
 };
 
-module.exports = { averageExams, isStudentPassExam };
+function findMax(a, b, c) {
+    return Math.max(a, b, c);
+}
+
+module.exports = { averageExams, isStudentPassExam, findMax };
