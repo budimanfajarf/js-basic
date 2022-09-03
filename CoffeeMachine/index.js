@@ -1,6 +1,4 @@
-console.log('test')
-
-const coffeeStock = require('./state');
+const { coffeeStock, isCoffeeMachineReady } = require('./state');
 
 const makeCoffee = (type, miligrams) => {
     if (coffeeStock[type] >= miligrams) {
