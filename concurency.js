@@ -47,3 +47,15 @@ const handleFailure = rejectionReason => {
 checkStock()
     .then(handleSuccess)
     .catch(handleFailure);
+
+// async function makeEspresso() {
+//     try {
+//         await checkAvailability();
+//         await checkStock();
+//         await Promise.all([boilWater(), grindCoffeeBeans()]);
+//         const coffee = await brewCoffee();
+//         console.log(coffee);
+//     } catch (rejectedReason) {
+//         console.log(rejectedReason);
+//     }
+// }
