@@ -43,4 +43,7 @@ const handleFailure = rejectionReason => {
     console.log(rejectionReason);
 }
 
-checkStock().then(handleSuccess, handleFailure);
+// checkStock().then(handleSuccess, handleFailure);
+checkStock()
+    .then(handleSuccess)
+    .catch(handleFailure);
